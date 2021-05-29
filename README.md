@@ -11,19 +11,10 @@ Git:
 $ git clone git@github.com:testdouble/java-cucumber-example.git
 ```
 
-Svn:
-```
-$ svn co https://github.com/testdouble/java-cucumber-example
-```
-
-Or download a ZIP of master [manually](https://github.com/testdouble/java-cucumber-example/archive/master.zip) and expand the contents someplace on your system
-
 ## Prerequisites
 
 In order to run browser tests, Selenium will need to be able to drive a browser
 installed to your system.
-
-(TODO after testing on Windows)
 
 ## Verify installation
 

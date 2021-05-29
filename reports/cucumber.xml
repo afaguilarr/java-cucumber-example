@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="3.06455">
+    <testcase classname="Todo API" name="Creating a todo" time="1.409446">
+        <failure message="org.junit.ComparisonFailure: The title is not the expected one expected:&lt;delectus[] aut autem&gt; but was:&lt;delectus[a] aut autem&gt;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:117)&#10;&#9;at stepdefinitions.myAPIExampleSteps.theResponseBodyContainsTheExpectedData(myAPIExampleSteps.java:30)&#10;&#9;at ✽.And the response body contains the expected data(myAPIExample.feature:7)&#10;"><![CDATA[When the user makes an example API call.....................................passed
+Then the API responds successfully..........................................passed
+And the response body contains the expected data............................failed
+
+StackTrace:
+org.junit.ComparisonFailure: The title is not the expected one expected:<delectus[] aut autem> but was:<delectus[a] aut autem>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at stepdefinitions.myAPIExampleSteps.theResponseBodyContainsTheExpectedData(myAPIExampleSteps.java:30)
+	at ✽.And the response body contains the expected data(myAPIExample.feature:7)
+]]></failure>
+    </testcase>
+    <testcase classname="Todo Lists" name="Creating a todo" time="1.655104">
+        <system-out><![CDATA[Given am I on the todo page.................................................passed
+When I type the todo "Do Things!"...........................................passed
+Then todo list item 1 has text "Do Things!".................................passed
+]]></system-out>
+    </testcase>
+</testsuite>

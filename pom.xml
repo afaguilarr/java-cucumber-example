@@ -8,7 +8,8 @@
 	<packaging>jar</packaging>
 
 	<properties>
-		<browser>firefox</browser>
+		<maven.compiler.source>14</maven.compiler.source>
+		<maven.compiler.target>14</maven.compiler.target>
 	</properties>
 
 	<dependencies>
@@ -58,6 +59,29 @@
 			<version>RELEASE</version>
 			<scope>test</scope>
 		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
+		<dependency>
+			<groupId>io.rest-assured</groupId>
+			<artifactId>rest-assured</artifactId>
+			<version>4.4.0</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.18.20</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>2.9.5</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>
@@ -68,7 +92,8 @@
 				<version>2.19.1</version>
 				<configuration>
 					<systemPropertyVariables>
-						<browser>chrome</browser>						
+						<browser>chrome</browser>
+						<webdriver.chrome.driver>bin/chromedriver</webdriver.chrome.driver>
 					</systemPropertyVariables>
 				</configuration>
 			</plugin>

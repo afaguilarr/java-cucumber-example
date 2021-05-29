@@ -1,0 +1,163 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Creating a todo",
+        "description": "",
+        "id": "todo-api;creating-a-todo",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1207675899,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user makes an example API call",
+            "match": {
+              "location": "myAPIExampleSteps.theUserMakesAnExampleApiCall()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 50125,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the API responds successfully",
+            "match": {
+              "location": "myAPIExampleSteps.theApiRespondsSuccessfully()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 201720153,
+              "error_message": "org.junit.ComparisonFailure: The title is not the expected one expected:\u003cdelectus[] aut autem\u003e but was:\u003cdelectus[a] aut autem\u003e\n\tat org.junit.Assert.assertEquals(Assert.java:117)\n\tat stepdefinitions.myAPIExampleSteps.theResponseBodyContainsTheExpectedData(myAPIExampleSteps.java:30)\n\tat ✽.And the response body contains the expected data(myAPIExample.feature:7)\n",
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "the response body contains the expected data",
+            "match": {
+              "location": "myAPIExampleSteps.theResponseBodyContainsTheExpectedData()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Todo API",
+    "description": "",
+    "id": "todo-api",
+    "keyword": "Feature",
+    "uri": "myAPIExample.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@API"
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1411617173,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "am I on the todo page",
+            "match": {
+              "location": "TodoSteps.am_I_on_the_todo_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "Creating a todo",
+        "description": "",
+        "id": "todo-lists;creating-a-todo",
+        "after": [
+          {
+            "result": {
+              "duration": 78721780,
+              "status": "passed"
+            },
+            "match": {
+              "location": "UIHooks.quitBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 136794910,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I type the todo \"Do Things!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Do Things!",
+                  "offset": 17
+                }
+              ],
+              "location": "TodoSteps.i_type_the_todo(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 27969851,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "todo list item 1 has text \"Do Things!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 15
+                },
+                {
+                  "val": "Do Things!",
+                  "offset": 27
+                }
+              ],
+              "location": "TodoSteps.todo_list_item_has_text(int,String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Todo Lists",
+    "description": "",
+    "id": "todo-lists",
+    "keyword": "Feature",
+    "uri": "todos.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@UI"
+      }
+    ]
+  }
+]
