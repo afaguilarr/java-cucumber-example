@@ -82,6 +82,13 @@
 			<version>2.9.5</version>
 		</dependency>
 
+		<dependency>
+			<groupId>io.github.bonigarcia</groupId>
+			<artifactId>webdrivermanager</artifactId>
+			<version>4.4.3</version>
+			<scope>test</scope>
+		</dependency>
+
 	</dependencies>
 
 	<build>
@@ -93,7 +100,6 @@
 				<configuration>
 					<systemPropertyVariables>
 						<browser>chrome</browser>
-						<webdriver.chrome.driver>bin/chromedriver</webdriver.chrome.driver>
 					</systemPropertyVariables>
 				</configuration>
 			</plugin>
