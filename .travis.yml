@@ -2,3 +2,6 @@ language: java
 
 jdk:
   - openjdk14
+
+script:
+  - mvn test "-Dheadless=--headless"

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="2.445085">
-    <testcase classname="Todo API" name="Creating a todo" time="1.473206">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="3.073317">
+    <testcase classname="Todo API" name="Creating a todo" time="1.404981">
         <system-out><![CDATA[When the user makes an example API call.....................................passed
 Then the API responds successfully..........................................passed
 And the response body contains the expected data............................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Todo Lists" name="Creating a todo" time="0.971879">
+    <testcase classname="Todo Lists" name="Creating a todo" time="1.668336">
         <system-out><![CDATA[Given am I on the todo page.................................................passed
 When I type the todo "Do Things!"...........................................passed
 Then todo list item 1 has text "Do Things!".................................passed

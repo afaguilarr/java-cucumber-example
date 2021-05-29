@@ -39,21 +39,21 @@ formatter.match({
   "location": "myAPIExampleSteps.theUserMakesAnExampleApiCall()"
 });
 formatter.result({
-  "duration": 1260548408,
+  "duration": 1207103402,
   "status": "passed"
 });
 formatter.match({
   "location": "myAPIExampleSteps.theApiRespondsSuccessfully()"
 });
 formatter.result({
-  "duration": 92916,
+  "duration": 51269,
   "status": "passed"
 });
 formatter.match({
   "location": "myAPIExampleSteps.theResponseBodyContainsTheExpectedData()"
 });
 formatter.result({
-  "duration": 212564237,
+  "duration": 197826278,
   "status": "passed"
 });
 formatter.uri("todos.feature");
@@ -86,7 +86,7 @@ formatter.match({
   "location": "TodoSteps.am_I_on_the_todo_page()"
 });
 formatter.result({
-  "duration": 794879286,
+  "duration": 1446842026,
   "status": "passed"
 });
 formatter.scenario({
@@ -117,7 +117,7 @@ formatter.match({
   "location": "TodoSteps.i_type_the_todo(String)"
 });
 formatter.result({
-  "duration": 82188721,
+  "duration": 116296723,
   "status": "passed"
 });
 formatter.match({
@@ -134,11 +134,11 @@ formatter.match({
   "location": "TodoSteps.todo_list_item_has_text(int,String)"
 });
 formatter.result({
-  "duration": 24686808,
+  "duration": 27146194,
   "status": "passed"
 });
 formatter.after({
-  "duration": 70123860,
+  "duration": 78050833,
   "status": "passed"
 });
 });

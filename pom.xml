@@ -100,7 +100,7 @@
 				<configuration>
 					<systemPropertyVariables>
 						<browser>chrome</browser>
-						<headless>--headless</headless>
+						<headless>${headless}</headless>
 					</systemPropertyVariables>
 				</configuration>
 			</plugin>
