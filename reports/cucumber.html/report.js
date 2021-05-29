@@ -39,23 +39,22 @@ formatter.match({
   "location": "myAPIExampleSteps.theUserMakesAnExampleApiCall()"
 });
 formatter.result({
-  "duration": 1207675899,
+  "duration": 1458011791,
   "status": "passed"
 });
 formatter.match({
   "location": "myAPIExampleSteps.theApiRespondsSuccessfully()"
 });
 formatter.result({
-  "duration": 50125,
+  "duration": 54617,
   "status": "passed"
 });
 formatter.match({
   "location": "myAPIExampleSteps.theResponseBodyContainsTheExpectedData()"
 });
 formatter.result({
-  "duration": 201720153,
-  "error_message": "org.junit.ComparisonFailure: The title is not the expected one expected:\u003cdelectus[] aut autem\u003e but was:\u003cdelectus[a] aut autem\u003e\n\tat org.junit.Assert.assertEquals(Assert.java:117)\n\tat stepdefinitions.myAPIExampleSteps.theResponseBodyContainsTheExpectedData(myAPIExampleSteps.java:30)\n\tat ✽.And the response body contains the expected data(myAPIExample.feature:7)\n",
-  "status": "failed"
+  "duration": 225071476,
+  "status": "passed"
 });
 formatter.uri("todos.feature");
 formatter.feature({
@@ -87,7 +86,7 @@ formatter.match({
   "location": "TodoSteps.am_I_on_the_todo_page()"
 });
 formatter.result({
-  "duration": 1411617173,
+  "duration": 1343022619,
   "status": "passed"
 });
 formatter.scenario({
@@ -118,7 +117,7 @@ formatter.match({
   "location": "TodoSteps.i_type_the_todo(String)"
 });
 formatter.result({
-  "duration": 136794910,
+  "duration": 137186993,
   "status": "passed"
 });
 formatter.match({
@@ -135,11 +134,11 @@ formatter.match({
   "location": "TodoSteps.todo_list_item_has_text(int,String)"
 });
 formatter.result({
-  "duration": 27969851,
+  "duration": 28405849,
   "status": "passed"
 });
 formatter.after({
-  "duration": 78721780,
+  "duration": 79273371,
   "status": "passed"
 });
 });
